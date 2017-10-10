@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00897B</color>
+    <color name="colorPrimaryDark">#00695C</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="colorProgressBarTint">#077c4a</color>
+    <color name="colorRecyclerBg">#f5f8fa</color>
+    <color name="colorMovieCardTextBg">#73000000</color>
+</resources>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Movies Lister</string>
+    <string name="no_movies_message">Seems like no movies matches your filter criteria.</string>
+</resources>

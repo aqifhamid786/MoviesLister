@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="handler" type="com.aqif.movieslister.movies.handlers.MovieInputHandler" />
+        <variable name="movie" type="com.aqif.movieslister.restapi.moviesdiscovery.responsedao.MovieBasic" />
+    </data>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="300dp"
+            android:onClick="@{(view) -> handler.onMovieClicked(view, movie)}">
+
+            <ImageView
+                android:id="@+id/poster_imageview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="1dp"
+                android:tint="@color/movie_poster_tint"
+                android:scaleType="centerCrop"
+                android:src="@drawable/holder"
+                app:imageUrl="@{movie}"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorMovieCardTextBg"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:gravity="center_vertical"
+                android:text="@{movie.title}"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+</layout>
